@@ -1,0 +1,119 @@
+GITBASH DIRECTORY COMMANDS
+cd ~ //takes you to your home directory
+pwd  // 'print working directory' shows your current directory
+ls // shows the files/folders in the current directory
+cd .. // takes you back up the directory
+cd (file/folder name) // change directory
+mkdir (New folder name) // makes a folder
+touch (new file name) // makes a file {Manual extension eg. html, .js}
+
+######################################################
+
+Using Git / Github (Brad traversy tut)
+Src: https://www.youtube.com/watch?v=SWYqp7iY_Tc&t=979s&ab_channel=TraversyMedia
+
+******** Basic comamnds **********
+git init          //Initialize Local Git repository
+git add <file>    // adds file
+git add .         // adds all files
+git add *.html    // adds all files with a certain extension
+git rm --cached <file> // removes from the staging area
+git status        // displays working tree and staging area
+git commit        // puts everything from the staging area into the local repository
+cd <drag file path> // enter // rm -fr .git // deletes repository, ready to init again 
+ 
+******** Working with remote repository **********
+git push          // Push to remote repository
+git pull          // Pull latest from remote repository
+git clone         // Clone repository into a new directory
+
+
+
+#### Using git/hub #####
+- check git is installed --> 'git --version' in bash
+- Right click folder and select use gitbash here or manually naviagte
+- Initialize as a git repository --> 'git init'
+    - this creates the .git folder in folder (hidden folder)
+- add name and email to git:
+    git config --global user.name 'Name'
+    git config --global user.email 'name@provider.co.uk'
+- git add index.html (adds index.html to the staging area)
+- git status (shows files added and changed files not added)
+- git rm --cached index.html (removes index.html from the staging area)
+- git add . (adds al files to the staging area)
+
+Commit - pushing stuff from the staging area to the repository:
+- git commit -m 'this is the first commit'
+
+'git status' should now show nothing to commit until a file is changed
+
+
+
+#### Git ignore #####
+in folder use command 'touch .gitignore'
+in this new file, enter the file names you want to be ignored
+such as a log.txt, to be ignored by git 
+type each file on a new line
+    - can use filename.ext to target a file
+    - can use *.ext to target all files with that extension
+
+
+
+#### Branches #####
+for adding to repository without editing the main code base 
+[git status    - shows the branch you are currently in]
+
+git branch <branchname> adds a new branch to the repository
+git checkout <branchname> moves you into the specified branch
+git checkout master    moves you back to the master branch
+
+when ready to merge a branch into the master, move into the master branch and use command;
+git merge <branchname> -m 'i am moving branch to master'
+branches hold different versions of a directory
+
+
+
+#### Working with a remote repository (github) #####
+log into github.com
+click the + and select new repository
+name the repository
+add description
+select public, private requires premium account
+init with readme
+
+
+
+### ADDING repository as REMOTE repository ###
+go back to gitbash,  git remote     will list all current remote directories
+enter command from github:
+git remote add origin https://github.com/user/?????
+enter git remote again to check its worked
+
+then enter:
+git push -u origin master 
+this should add it to the remote repository
+
+log into github in the pop up box
+
+reload github.com and check its completed successfully 
+
+now it is linked up all you have to type is 
+git push 
+and it will push the commits 
+
+
+#### README.md #####
+touch README.md     to create a readme markdown file
+in md # marks it as a header EG.
+#MyApp
+this is my app 
+
+
+#### Cloning with git #####
+go to the page you want to clone, copy clone link
+open gitbash in the area you want the clone to be stored
+git clone <paste link>
+
+
+### Someone else updating the repository ####
+git pull    in the correct directory will check if the repository has been updated
