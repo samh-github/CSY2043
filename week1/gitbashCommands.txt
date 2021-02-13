@@ -112,7 +112,7 @@ this is my app
 #### Cloning with git #####
 go to the page you want to clone, copy clone link
 open gitbash in the area you want the clone to be stored
-git clone <paste link>
+git clone <paste https link from the repos github page>
 
 
 ### Someone else updating the repository ####
