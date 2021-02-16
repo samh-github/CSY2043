@@ -1,0 +1,25 @@
+html{
+    background-color: bisque;
+    padding: 30px;
+}
+
+main{
+    background-color: cadetblue;
+    padding: 25px;
+
+}
+
+h1,h2{
+    font-family: monospace;
+}
+
+h1{
+    color: aqua;
+    background-color: brown;
+    padding: 25px;
+}
+
+p{
+    color: rgb(109, 0, 100);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
