@@ -30,7 +30,7 @@ git clone         // Clone repository into a new directory
 
 
 #### Using git/hub #####
-- check git is installed --> 'git --version' in bash
+- check git is installed --> 'git --version' in cmd
 - Right click folder and select use gitbash here or manually naviagte
 - Initialize as a git repository --> 'git init'
     - this creates the .git folder in folder (hidden folder)
@@ -60,7 +60,8 @@ type each file on a new line
 
 
 #### Branches #####
-for adding to repository without editing the main code base 
+for adding to repository without editing the main code base
+the standard branch is master
 [git status    - shows the branch you are currently in]
 
 git branch <branchname> adds a new branch to the repository
