@@ -23,3 +23,12 @@ p{
     color: rgb(109, 0, 100);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+#boxes{
+    display: flex;
+}
+
+.box{
+    background-color: chocolate;
+    margin: 20px;
+}
