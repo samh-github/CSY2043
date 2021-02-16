@@ -1,7 +1,7 @@
 html{
     background-color: bisque;
     padding: 30px;
-}
+    }
 
 main{
     background-color: cadetblue;
@@ -26,9 +26,19 @@ p{
 
 #boxes{
     display: flex;
+    justify-content: space-around;
 }
 
 .box{
-    background-color: chocolate;
+    background-color: rgb(49, 21, 0);
     margin: 20px;
+    min-width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box p{
+    color: fuchsia;
 }
