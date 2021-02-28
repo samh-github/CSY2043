@@ -1,0 +1,2 @@
+This week we have gone over setting up a react app using the npx command
+We also went over some of the basic concepts of react and how to implement them
